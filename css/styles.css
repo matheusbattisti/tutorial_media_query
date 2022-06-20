@@ -1,0 +1,52 @@
+h1 {
+  color: red;
+}
+
+/* 2 - Sintaxe, apenas para telas, breakpoint */
+@media screen and (max-width: 500px) {
+  h1 {
+    color: blue;
+  }
+}
+
+/* 3 - Outros modos */
+@media print and (max-width: 600px) {
+  h1 {
+    color: green;
+  }
+}
+
+/* 4 - Todos os modos */
+@media (max-width: 700px) {
+  h2 {
+    color: purple;
+  }
+}
+
+/* 5 - Mobile first */
+@media (min-width: 200px) {
+  h2 {
+    color: teal;
+  }
+}
+
+/* 6 - AND na media query */
+@media (min-width: 300px) and (max-width: 400px) {
+  h3 {
+    font-size: 3em;
+  }
+}
+
+/* 7 - Orientation */
+@media (orientation: landscape) {
+  h3 {
+    color: brown;
+  }
+}
+
+/* 7 - OR na media query */
+@media (max-width: 200px), (orientation: landscape) {
+  h3 {
+    font-size: 4em;
+  }
+}
